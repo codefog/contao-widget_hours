@@ -1,9 +1,9 @@
 widget_hours Contao Extension
 =============================
 
+Contao widget to enter hours for each day of the week.
 
-
-Usage:
+Usage example:
 
 ```php
 $GLOBALS['TL_DCA']['tl_module']['fields']['openHours'] = array
