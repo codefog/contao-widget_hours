@@ -1,0 +1,35 @@
+.tl_widgethours {
+	width: 100%;
+}
+
+.tl_widgethours thead {
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.tl_widgethours th,
+.tl_widgethours td {
+	padding: 8px 0;
+	text-align: center;
+}
+
+.tl_widgethours td {
+	border-right: 1px solid #eaeaea;
+}
+
+.tl_widgethours .wh_row {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.tl_widgethours span {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 4px;
+	color: #BBBBBB;
+}
+
+.tl_widgethours .tl_text {
+	text-align: center;
+	width: 30px;
+	margin: 0 2px;
+}
