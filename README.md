@@ -18,6 +18,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['openHours'] = array
 
 ### Contao compatibility
 - Contao 3.0
+- Contao 3.1
 
 ### Available languages
 - English
