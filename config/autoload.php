@@ -3,10 +3,10 @@
 /**
  * widget_hours extension for Contao Open Source CMS
  *
- * Copyright (C) 2013 Codefog
+ * Copyright (C) 2013 Codefog Ltd
  *
  * @package widget_hours
- * @link    http://codefog.pl
+ * @author  Codefog Ltd <http://codefog.pl>
  * @author  Kamil Kuzminski <kamil.kuzminski@codefog.pl>
  * @license LGPL
  */
@@ -17,6 +17,5 @@
  */
 ClassLoader::addClasses(array
 (
-	'Contao\WidgetHours'     => 'system/modules/widget_hours/widgets/WidgetHours.php',
-	'Contao\FormWidgetHours' => 'system/modules/widget_hours/widgets/FormWidgetHours.php'
+	'Contao\WidgetHours' => 'system/modules/widget_hours/widgets/WidgetHours.php'
 ));

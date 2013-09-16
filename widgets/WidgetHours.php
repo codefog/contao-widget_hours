@@ -2,15 +2,14 @@
 
 /**
  * widget_hours extension for Contao Open Source CMS
- * 
- * Copyright (C) 2013 Codefog
- * 
+ *
+ * Copyright (C) 2013 Codefog Ltd
+ *
  * @package widget_hours
- * @link    http://codefog.pl
+ * @author  Codefog Ltd <http://codefog.pl>
  * @author  Kamil Kuzminski <kamil.kuzminski@codefog.pl>
  * @license LGPL
  */
-
 
 namespace Contao;
 
@@ -110,7 +109,7 @@ class WidgetHours extends \Widget
 				{
 					$blnMandatory = true;
 				}
-	
+
 				// Valid time check
 				if (($arrDay['from'] != '' && !preg_match('~^'. $this->Date->getRegexp($GLOBALS['TL_CONFIG']['timeFormat']) .'$~i', $arrDay['from'])) || ($arrDay['to'] != '' && !preg_match('~^'. $this->Date->getRegexp($GLOBALS['TL_CONFIG']['timeFormat']) .'$~i', $arrDay['to'])))
 				{
