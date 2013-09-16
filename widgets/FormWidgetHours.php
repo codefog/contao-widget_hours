@@ -15,10 +15,10 @@ namespace Contao;
 
 
 /**
- * Class WidgetHours
- * Provide a widget "hours".
+ * Class FormWidgetHours
+ * Form field "hours".
  */
-class WidgetHours extends \Widget
+class FormWidgetHours extends \Widget
 {
 
 	/**
@@ -49,7 +49,7 @@ class WidgetHours extends \Widget
 	 * Template
 	 * @var string
 	 */
-	protected $strTemplate = 'be_widget';
+	protected $strTemplate = 'form_widget';
 
 
 	/**
