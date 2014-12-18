@@ -16,7 +16,7 @@
  * Extension version
  */
 @define('WIDGET_HOURS_VERSION', '1.0');
-@define('WIDGET_HOURS_BUILD', '2');
+@define('WIDGET_HOURS_BUILD', '3');
 
 
 /**
