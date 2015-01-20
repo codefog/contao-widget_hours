@@ -8,18 +8,13 @@
  * @package widget_hours
  * @author  Codefog <http://codefog.pl>
  * @author  Kamil Kuzminski <kamil.kuzminski@codefog.pl>
+ * @author  Didier Federer <d.federer@designpilot.ch>
  * @license LGPL
  */
 
 
 /**
- * Extension version
+ * Miscellaneous
  */
-@define('WIDGET_HOURS_VERSION', '1.0');
-@define('WIDGET_HOURS_BUILD', '4');
-
-
-/**
- * Back end form fields
- */
-$GLOBALS['BE_FFL']['hoursWidget'] = 'WidgetHours';
+$GLOBALS['TL_LANG']['MSC']['wh_from'] = 'Von';
+$GLOBALS['TL_LANG']['MSC']['wh_to']   = 'Bis';
