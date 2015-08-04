@@ -7,6 +7,9 @@ Version 1.0.5 stable (2015-08-??)
 ### Improved
 - Added the .gitignore file
 
+### Fixed
+- Fixed the .htaccess file (see #1)
+
 
 Version 1.0.4 stable (2015-01-20)
 ---------------------------------
