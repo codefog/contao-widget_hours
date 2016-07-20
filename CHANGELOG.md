@@ -1,7 +1,7 @@
 widget_hours Changelog
 ======================
 
-Version 1.0.6 stable (????-??-??)
+Version 1.0.6 stable (2016-07-20)
 ---------------------------------
 
 ### Fixed
