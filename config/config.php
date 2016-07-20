@@ -16,10 +16,14 @@
  * Extension version
  */
 @define('WIDGET_HOURS_VERSION', '1.0');
-@define('WIDGET_HOURS_BUILD', '5');
-
+@define('WIDGET_HOURS_BUILD', '6');
 
 /**
  * Back end form fields
  */
 $GLOBALS['BE_FFL']['hoursWidget'] = 'WidgetHours';
+
+/**
+ * Front end form fields
+ */
+$GLOBALS['TL_FFL']['hoursWidget'] = 'FormWidgetHours';
