@@ -15,7 +15,17 @@
 /**
  * Register the classes
  */
-ClassLoader::addClasses(array
-(
-	'Contao\WidgetHours' => 'system/modules/widget_hours/widgets/WidgetHours.php'
-));
+ClassLoader::addClasses(
+    array
+    (
+        'Contao\WidgetHours'     => 'system/modules/widget_hours/widgets/WidgetHours.php',
+        'Contao\FormWidgetHours' => 'system/modules/widget_hours/widgets/FormWidgetHours.php',
+    )
+);
+
+/**
+ * Register the templates
+ */
+TemplateLoader::addFiles([
+    'form_hours_widget' => 'system/modules/widget_hours/templates',
+]);
