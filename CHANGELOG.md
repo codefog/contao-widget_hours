@@ -1,6 +1,13 @@
 widget_hours Changelog
 ======================
 
+Version 1.0.6 stable (????-??-??)
+---------------------------------
+
+### Fixed
+- Make the extension compatible with Contao 4.2
+
+
 Version 1.0.5 stable (2015-08-04)
 ---------------------------------
 
