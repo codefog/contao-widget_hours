@@ -27,7 +27,7 @@
     </thead>
     <tbody>
     <?php foreach ($this->getTableBody() as $row): ?>
-        <tr class="wh_row">
+        <tr>
             <td>
                 <span><?= $GLOBALS['TL_LANG']['MSC']['wh_from'] ?></span><span><?= $GLOBALS['TL_LANG']['MSC']['wh_to'] ?></span><br>
                 <input type="text" name="<?= $row['from']['name'] ?>" id="<?= $row['from']['id'] ?>" class="tl_text" value="<?= $row['from']['value'] ?>"> - <input type="text" name="<?= $row['to']['name'] ?>" id="<?= $row['to']['id'] ?>" class="tl_text" value="<?= $row['to']['value'] ?>">
