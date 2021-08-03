@@ -21,15 +21,19 @@
 	border-bottom: 1px solid #eaeaea;
 }
 
-.tl_widgethours span {
+.tl_widgethours .wh_label {
 	display: inline-block;
 	width: 50%;
-	margin-bottom: 4px;
-	color: #BBBBBB;
+	margin-bottom: 8px;
+}
+
+.tl_widgethours .wh_divider {
+	display: inline-block;
+	width: 10%;
 }
 
 .tl_widgethours .tl_text {
 	text-align: center;
-	width: 35px;
+	width: 40%;
 	margin: 0 2px;
 }
