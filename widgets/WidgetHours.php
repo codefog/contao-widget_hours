@@ -185,7 +185,7 @@ class WidgetHours extends \Widget
 		    	$varFrom = is_numeric($this->varValue[$j][$intCurrentDay]['from']) ? $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $this->varValue[$j][$intCurrentDay]['from']) : $this->varValue[$j][$intCurrentDay]['from'];
 		    	$varTo = is_numeric($this->varValue[$j][$intCurrentDay]['to']) ? $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $this->varValue[$j][$intCurrentDay]['to']) : $this->varValue[$j][$intCurrentDay]['to'];
 
-				$strReturn .= '<td><span class="wh_label">'.$GLOBALS['TL_LANG']['MSC']['wh_from'].'</span><span class="wh_label">'.$GLOBALS['TL_LANG']['MSC']['wh_to'].'</span><br><input type="text" name="'.$this->strId.'['.$j.']['.$intCurrentDay.'][from]" id="'.$this->strId.'_'.$j.'_'.$intCurrentDay.'_from" class="tl_text" value="'.$varFrom.'">';
+				$strReturn .= '<td><span class="wh_label tl_gray">'.$GLOBALS['TL_LANG']['MSC']['wh_from'].'</span><span class="wh_label tl_gray">'.$GLOBALS['TL_LANG']['MSC']['wh_to'].'</span><br><input type="text" name="'.$this->strId.'['.$j.']['.$intCurrentDay.'][from]" id="'.$this->strId.'_'.$j.'_'.$intCurrentDay.'_from" class="tl_text" value="'.$varFrom.'">';
 				$strReturn .= '<span class="wh_divider">-</span><input type="text" name="'.$this->strId.'['.$j.']['.$intCurrentDay.'][to]" id="'.$this->strId.'_'.$j.'_'.$intCurrentDay.'_from" class="tl_text" value="'.$varTo.'"></td>';
 			}
 
