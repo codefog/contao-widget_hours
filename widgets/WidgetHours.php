@@ -117,7 +117,7 @@ class WidgetHours extends \Widget
 					break 2;
 				}
 
-				if ($arrDay['from'] != '' && $arrDay['to'] != '')
+				if (!$this->storeRaw && $arrDay['from'] != '' && $arrDay['to'] != '')
 				{
 					$objFrom = new \Date($arrDay['from'], $GLOBALS['TL_CONFIG']['timeFormat']);
 					$objTo = new \Date($arrDay['to'], $GLOBALS['TL_CONFIG']['timeFormat']);
