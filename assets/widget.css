@@ -1,0 +1,52 @@
+.tl_widgethours {
+	width: 100%;
+	margin: 4px 0;
+}
+
+.tl_widgethours * {
+	box-sizing: border-box;
+}
+
+.tl_widgethours thead {
+	background-color: #f5f5f5;
+}
+
+.tl_widgethours th,
+.tl_widgethours td {
+	width: calc(100% / 7);
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #eaeaea;
+}
+
+.tl_widgethours .wh_labels {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+
+.tl_widgethours .wh_label {
+	display: block;
+	font-size: 0.8em;
+	text-align: center;
+	text-transform: uppercase;
+	width: 45%;
+}
+
+.tl_widgethours .wh_inputs {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tl_widgethours .wh_divider {
+	display: inline-block;
+	width: 10%;
+}
+
+.tl_widgethours .tl_text {
+	text-align: center;
+	width: 45%;
+}

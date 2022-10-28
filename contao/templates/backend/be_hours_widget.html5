@@ -1,0 +1,34 @@
+<h3><?= $this->generateLabel().$this->xlabel ?></h3>
+
+<table class="tl_widgethours" id="ctrl_<?= $this->strId ?>">
+    <thead>
+    <tr>
+        <?php foreach ($this->getTableHeaders() as $header): ?>
+            <th><?= $header ?></th>
+        <?php endforeach; ?>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->getTableBody() as $rows): ?>
+        <tr>
+            <?php foreach ($rows as $row): ?>
+                <td>
+                    <div class="wh_labels">
+                        <span class="wh_label tl_gray"><?= $GLOBALS['TL_LANG']['MSC']['wh_from'] ?></span>
+                        <span class="wh_label tl_gray"><?= $GLOBALS['TL_LANG']['MSC']['wh_to'] ?></span>
+                    </div>
+                    <div class="wh_inputs">
+                        <input type="text" name="<?= $row['from']['name'] ?>" id="<?= $row['from']['id'] ?>" class="tl_text" value="<?= $row['from']['value'] ?>">
+                        <span class="wh_divider tl_gray">-</span>
+                        <input type="text" name="<?= $row['to']['name'] ?>" id="<?= $row['to']['id'] ?>" class="tl_text" value="<?= $row['to']['value'] ?>">
+                    </div>
+                </td>
+            <?php endforeach; ?>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
+<?= $this->getErrorAsHTML() ?>
+
+<link rel="stylesheet" href="<?= \Contao\System::getContainer()->get('assets.packages')->getUrl('widget.css', 'codefog_widget_hours') ?>">

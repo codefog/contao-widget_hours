@@ -1,0 +1,52 @@
+<?php
+$this->extend('form_row');
+$GLOBALS['TL_CSS']['widget_hours'] = \Contao\System::getContainer()->get('assets.packages')->getUrl('widget.css', 'codefog_widget_hours');
+?>
+
+<?php $this->block('label'); ?>
+<?php if ($this->label): ?>
+    <label for="ctrl_<?= $this->id ?>"<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?>>
+        <?php if ($this->mandatory): ?>
+            <span class="invisible"><?= $this->mandatoryField ?> </span><?= $this->label ?><span class="mandatory">*</span>
+        <?php else: ?>
+            <?= $this->label ?>
+        <?php endif; ?>
+    </label>
+<?php endif; ?>
+<?php $this->endblock(); ?>
+
+<?php $this->block('field'); ?>
+<?php if ($this->hasErrors()): ?>
+    <p class="error"><?= $this->getErrorAsString() ?></p>
+<?php endif; ?>
+
+<table class="tl_widgethours" id="ctrl_<?= $this->strId ?>">
+    <thead>
+    <tr>
+        <?php foreach ($this->getTableHeaders() as $header): ?>
+            <th><?= $header ?></th>
+        <?php endforeach; ?>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->getTableBody() as $rows): ?>
+        <tr>
+            <?php foreach ($rows as $row): ?>
+                <td>
+                    <div class="wh_labels">
+                        <span class="wh_label"><?= $GLOBALS['TL_LANG']['MSC']['wh_from'] ?></span>
+                        <span class="wh_label"><?= $GLOBALS['TL_LANG']['MSC']['wh_to'] ?></span>
+                    </div>
+                    <div class="wh_inputs">
+                        <input type="text" name="<?= $row['from']['name'] ?>" id="<?= $row['from']['id'] ?>" class="tl_text" value="<?= $row['from']['value'] ?>">
+                        <span class="wh_divider">-</span>
+                        <input type="text" name="<?= $row['to']['name'] ?>" id="<?= $row['to']['id'] ?>" class="tl_text" value="<?= $row['to']['value'] ?>">
+                    </div>
+                </td>
+            <?php endforeach; ?>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
+<?php $this->endblock(); ?>

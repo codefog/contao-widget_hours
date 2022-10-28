@@ -1,5 +1,13 @@
 # Widget Hours – Documentation
 
+## Installation
+
+Install the bundle using Contao Manager or directly via Composer:
+
+```
+composer require codefog/contao-widget_hours
+```
+
 ## Usage example
 
 The following options can be set in the evaluation array:
@@ -12,12 +20,16 @@ weekOffset | Starting day of the week (0=Sunday, 1=Monday, etc.)
 For example implementation see below code:
 
 ```php
-$GLOBALS['TL_DCA']['tl_module']['fields']['openHours'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_module']['openHours'],
-    'exclude'   => true,
+$GLOBALS['TL_DCA']['tl_table']['fields']['openHours'] = [
+    'exclude' => true,
     'inputType' => 'hoursWidget',
-    'eval'      => array('mandatory'=>true, 'rows'=>2, 'weekOffset'=>1, 'tl_class'=>'clr'),
-    'sql'       => "blob NULL"
-);
+    'eval' => [
+        'mandatory' => true, 
+        'rows' => 2, // Number of rows
+        'weekOffset' => 1, // Custom week offset
+        'storeRaw' => true, // Store raw values and do not convert value to timestamp
+        'tl_class' => 'clr',
+    ],
+    'sql' => ['type' => 'blob', 'notnull' => false],
+];
 ```

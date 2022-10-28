@@ -1,0 +1,9 @@
+{
+  "entrypoints": {
+    "widget": {
+      "css": [
+        "/bundles/codefogwidgethours/widget.d7d2f6a8.css"
+      ]
+    }
+  }
+}

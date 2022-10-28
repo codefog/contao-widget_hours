@@ -1,0 +1,20 @@
+{
+    "name": "contao-widget_hours",
+    "repository": {
+        "type": "git",
+        "url": "git+github.com/codefog/contao-widget_hours"
+    },
+    "scripts": {
+        "build": "node_modules/.bin/encore production"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@symfony/webpack-encore": "^1.5.0",
+        "autoprefixer": "^10.2.6",
+        "file-loader": "^6.0.0",
+        "postcss-loader": "^5.0.0"
+    },
+    "browserslist": [
+        "defaults"
+    ]
+}
